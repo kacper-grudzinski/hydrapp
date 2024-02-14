@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-900 font-roboto font-medium min-h-screen flex justify-center items-center">
+    <main>
+      <h1 class="text-white text-6xl text-center mb-16">hydrapp</h1>
+      <div class="relative mb-12">
+        <img src="./water-glass.svg" alt="">
+        <p class="counter--js text-black absolute text-9xl w-full h-full top-0 left-0 flex justify-center items-center">0</p>
+      </div>
+      <button class="add--js mx-auto bg-white text-black rounded w-56 h-12 flex justify-center items-center mb-6">dodaj szklankę</button>
+      <button class="subtract--js mx-auto bg-transparent text-red-500 w-56 h-12 flex justify-center items-center">usuń szklankę</button>
+    </main>
+    <script defer src="./main.js" type="module"></script>
+  </body>
+</html>
