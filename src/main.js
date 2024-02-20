@@ -3,8 +3,6 @@ const jsConfetti = new JSConfetti();
 const addButton = document.querySelector(".add--js");
 const subtractButton = document.querySelector(".subtract--js");
 const counterValue = document.querySelector(".counter--js");
-const hour = new Date().getHours();
-const actualMinute = new Date().getMinutes();
 
 let glasses = 0;
 
@@ -44,7 +42,8 @@ subtractButton.addEventListener("click", () => {
 });
 
 setInterval(() => {
-  if(hour === actualMinute){
+  const currentDate = new Date();
+  if(currentDate.getHours() === currentDate.getMinutes()){
     jsConfetti.addConfetti();
   }
 }, 1000*60);
